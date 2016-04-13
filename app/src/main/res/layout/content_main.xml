@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allen.topbardemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="自定义TopBar的样式"
+        android:textSize="20sp"/>
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:centerBackgroundShow="false"
+        custom:centerText="标题"
+        custom:centerTextColor="@android:color/white"
+        custom:centerTextShow="true"
+        custom:leftIcon="@mipmap/titlebar_leftarrow_back"
+        custom:rightIcon="@mipmap/ic_discuss"
+        custom:rightIcon2="@mipmap/ic_discuss"
+        custom:rightIcon2Show="true"
+        custom:rightIconShow="true"/>
+
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        custom:centerBackgroundShow="false"
+        custom:centerText="标题"
+        custom:centerTextColor="@android:color/white"
+        custom:centerTextShow="true"
+        custom:leftIcon="@mipmap/titlebar_leftarrow_back"
+        custom:rightIcon="@mipmap/ic_discuss"
+        custom:rightIconShow="true"/>
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        custom:centerBackgroundShow="false"
+        custom:centerText="标题"
+        custom:centerTextColor="@android:color/white"
+        custom:centerTextShow="true"
+        custom:leftIcon="@mipmap/titlebar_leftarrow_back"/>
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        custom:centerBackgroundShow="false"
+        custom:centerText="标题"
+        custom:centerTextColor="@android:color/white"
+        />
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        custom:centerBackground="@mipmap/logo"
+        custom:centerBackgroundShow="true"
+        custom:centerTextColor="@android:color/white"
+        />
+</LinearLayout>

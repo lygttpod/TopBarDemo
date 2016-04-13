@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.allen.topbardemo.view.TopBar
+        android:id="@+id/topbar_qr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:backgroundColor="@color/colorPrimary"
+        custom:centerBackground="@mipmap/logo"
+        custom:centerText="二维码工具"
+        custom:centerTextColor="@android:color/white"
+        custom:centerTextShow="true"
+        custom:leftIcon="@mipmap/titlebar_leftarrow_back"
+        custom:rightIcon="@mipmap/ic_discuss"
+        custom:rightIcon2="@mipmap/ic_discuss"
+        custom:rightIconShow="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入字符串"/>
+
+        <Button
+            android:id="@+id/create_QRcode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成二维码"/>
+
+        <ImageView
+            android:id="@+id/show_qrcode_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>
